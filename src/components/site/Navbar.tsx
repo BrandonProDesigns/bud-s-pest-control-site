@@ -15,13 +15,13 @@ export function Navbar() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#home" className="flex items-baseline gap-2">
-          <span className="font-heading text-2xl font-bold uppercase tracking-wide text-primary">
-            Bud's Pest Control
-          </span>
-          <span className="hidden font-heading text-sm font-semibold text-accent sm:inline">
-            | BPC
-          </span>
+        <a href="#home" className="flex items-center gap-2">
+          <img
+            src={logo}
+            alt="Bud's Pest Control logo"
+            className="h-10 w-auto sm:h-12"
+          />
+          <span className="sr-only">Bud's Pest Control | BPC</span>
         </a>
 
         <nav className="hidden items-center gap-8 md:flex">
