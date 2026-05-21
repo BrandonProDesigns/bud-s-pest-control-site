@@ -3,9 +3,10 @@
   "private": true,
   "sideEffects": false,
   "type": "module",
+  "main": "app.js",
   "scripts": {
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "cross-env NITRO_PRESET=node-server vite build",
     "build:dev": "vite build --mode development",
     "build:hostinger": "cross-env NITRO_PRESET=node-server vite build",
     "start": "node dist/server/index.mjs",

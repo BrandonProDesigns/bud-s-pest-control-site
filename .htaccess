@@ -1,10 +1,14 @@
 RewriteEngine On
 RewriteBase /
 
-# If the request is for a physical file or directory, serve it
-RewriteCond %{REQUEST_FILENAME} -f [OR]
-RewriteCond %{REQUEST_FILENAME} -d
-RewriteRule ^ - [L]
+# 1. Handle Assets (Vite fingerprints them, so we can cache them heavily)
+# If the request starts with /assets/, try to serve it from dist/public/assets/
+RewriteCond %{DOCUMENT_ROOT}/dist/public%{REQUEST_URI} -f
+RewriteRule ^assets/(.*)$ dist/public/assets/$1 [L,NC]
 
-# Otherwise, pass everything to the Node.js app
-# (Hostinger's Node.js selector usually handles this if server.js is the entry point)
+# 2. Handle all other requests via the Node.js application
+# Passenger or the Node selector will look for app.js or server.js
+# If physical file doesn't exist, we rewrite to the app entry point
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ app.js/$1 [L]
