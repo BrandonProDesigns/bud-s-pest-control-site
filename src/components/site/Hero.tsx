@@ -64,10 +64,7 @@ function TechnicianSilhouette() {
 
 export function Hero() {
   return (
-    <section
-      id="home"
-      className="relative overflow-hidden bg-primary text-primary-foreground"
-    >
+    <section id="home" className="relative overflow-hidden bg-primary text-primary-foreground">
       {/* Diagonal orange accent */}
       <div
         aria-hidden="true"
@@ -89,8 +86,8 @@ export function Hero() {
             Protecting Your Home & Business From Pests
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/80 sm:text-xl">
-            Professional Pest Management Services in Cape Town. Reliable • Safe •
-            Professional Service.
+            Professional Pest Management Services in Cape Town. Reliable • Safe • Professional
+            Service.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
