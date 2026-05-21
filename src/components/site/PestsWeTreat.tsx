@@ -7,7 +7,7 @@ const pests = [
   { label: "Ticks", icon: "🕷️" },
   { label: "Ants", icon: "🐜" },
   { label: "Rodents", icon: "🐀" },
-  { label: "Bird Lice", icon: "🪶" },
+  { label: "Bird Lice", icon: "🪲" },
   { label: "Termites", icon: "🐛" },
   { label: "Bed Bugs", icon: "🛏️" },
 ];
