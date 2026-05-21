@@ -4,6 +4,7 @@ import { Hero } from "@/components/site/Hero";
 import { WhyChooseUs } from "@/components/site/WhyChooseUs";
 import { PestsWeTreat } from "@/components/site/PestsWeTreat";
 import { SubscriptionPlan } from "@/components/site/SubscriptionPlan";
+import { SubscriptionEnquiry } from "@/components/site/SubscriptionEnquiry";
 import { Contact } from "@/components/site/Contact";
 import { Footer } from "@/components/site/Footer";
 
@@ -42,6 +43,7 @@ function Index() {
         <WhyChooseUs />
         <PestsWeTreat />
         <SubscriptionPlan />
+        <SubscriptionEnquiry />
         <Contact />
       </main>
       <Footer />
