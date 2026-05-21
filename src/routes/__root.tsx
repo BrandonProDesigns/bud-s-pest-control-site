@@ -72,14 +72,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Bud's Pest Control — Cape Town Pest Management" },
+      {
+        name: "description",
+        content: "Professional pest control in Cape Town. Developed by Trendon Pro.",
+      },
+      { name: "author", content: "Trendon Pro" },
+      { property: "og:title", content: "Bud's Pest Control — Cape Town Pest Management" },
+      {
+        property: "og:description",
+        content: "Professional pest control in Cape Town. Developed by Trendon Pro.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@TrendonPro" },
     ],
     links: [
       {

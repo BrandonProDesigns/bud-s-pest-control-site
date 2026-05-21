@@ -34,10 +34,24 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10">
-        <p className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
-          © {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South
-          Africa.
-        </p>
+        <div className="mx-auto max-w-7xl px-4 py-5 flex flex-col items-center justify-center gap-2 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
+          <p>
+            © {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South
+            Africa.
+          </p>
+          <p>
+            Powered by{" "}
+            <a
+              href="https://trendonpro.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold hover:text-accent transition-colors"
+            >
+              Trendon Pro
+            </a>{" "}
+            • 082 495 5147
+          </p>
+        </div>
       </div>
     </footer>
   );
