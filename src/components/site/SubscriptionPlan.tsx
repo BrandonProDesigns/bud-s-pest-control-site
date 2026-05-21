@@ -22,9 +22,19 @@ export function SubscriptionPlan() {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mx-auto max-w-3xl text-center">
-          <p className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-1 text-xs font-bold uppercase tracking-widest text-accent">
-            <Repeat className="h-3.5 w-3.5" /> Monthly Subscription
-          </p>
+          <div className="flex flex-col items-center gap-3">
+            <p className="inline-flex items-center gap-2 rounded-full bg-accent/20 px-4 py-1 text-xs font-bold uppercase tracking-widest text-accent">
+              <Repeat className="h-3.5 w-3.5" /> Monthly Subscription
+            </p>
+            <div className="flex flex-wrap justify-center gap-2">
+              <span className="rounded bg-accent/20 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent">
+                📍 Cape Town
+              </span>
+              <span className="rounded bg-primary-foreground/10 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-primary-foreground/60">
+                🕐 JHB Coming Soon
+              </span>
+            </div>
+          </div>
           <h2 className="mt-4 font-heading text-4xl font-bold uppercase leading-tight sm:text-5xl lg:text-6xl">
             Join Our Monthly Subscription — <span className="text-accent">From R269/month</span>
           </h2>
@@ -67,6 +77,10 @@ export function SubscriptionPlan() {
                 <p className="mt-4 text-accent-foreground/90">
                   6 services per year • Cape Town & surrounds • Cancel any time per Ts & Cs.
                 </p>
+                <div className="mt-4 flex flex-col gap-1 text-xs font-bold uppercase tracking-tight text-primary/80">
+                  <p>📍 Currently available in Cape Town & surrounds only</p>
+                  <p>🕐 Johannesburg — Coming Soon!</p>
+                </div>
               </div>
               <div className="mt-8 flex flex-col gap-3">
                 <a
