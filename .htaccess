@@ -6,5 +6,5 @@ RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Otherwise, pass everything to the Node.js app
-# (Hostinger's Node.js selector usually handles this if server.js is the entry point)
+# For SPA: Route all other requests to index.html
+RewriteRule ^ index.html [L]
