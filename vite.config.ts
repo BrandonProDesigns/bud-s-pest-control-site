@@ -12,4 +12,5 @@ export default defineConfig({
   tanstackStart: {
     server: { entry: "server" },
   },
+  cloudflare: process.env.NITRO_PRESET === "node-server" ? false : undefined,
 });
