@@ -34,10 +34,12 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-primary-foreground/10">
-        <p className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
-          © {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South
-          Africa.
-        </p>
+        <div className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
+          <p>© {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South Africa.</p>
+          <p className="mt-2">
+            Powered by <span className="font-semibold text-primary-foreground/80">Brandon Pro</span> • 0737742151
+          </p>
+        </div>
       </div>
     </footer>
   );
