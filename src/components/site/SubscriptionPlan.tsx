@@ -1,4 +1,4 @@
-import { CheckCircle2, Repeat } from "lucide-react";
+import { CheckCircle2, Repeat, MapPin, Clock } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 
 const steps = [
@@ -67,6 +67,21 @@ export function SubscriptionPlan() {
                 <p className="mt-4 text-accent-foreground/90">
                   6 services per year • Cape Town & surrounds • Cancel any time per Ts & Cs.
                 </p>
+
+                <div className="mt-6 flex flex-col gap-2">
+                  <div className="flex items-center gap-2">
+                    <MapPin className="h-4 w-4 text-[#ea580c]" />
+                    <span className="text-[11px] font-black uppercase tracking-tight text-primary">
+                      Currently available in Cape Town & surrounds only
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <Clock className="h-4 w-4 text-slate-500" />
+                    <span className="text-[11px] font-black uppercase tracking-tight text-slate-600">
+                      Johannesburg — Coming Soon
+                    </span>
+                  </div>
+                </div>
               </div>
               <div className="mt-8 flex flex-col gap-3">
                 <a
