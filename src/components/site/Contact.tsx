@@ -33,9 +33,7 @@ export function Contact() {
     <section id="contact" className="bg-background py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <FadeIn className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">
-            Get In Touch
-          </p>
+          <p className="text-sm font-bold uppercase tracking-[0.2em] text-accent">Get In Touch</p>
           <h2 className="mt-3 font-heading text-4xl font-bold uppercase text-primary sm:text-5xl">
             Contact Bud's Pest Control
           </h2>

@@ -9,9 +9,7 @@ export function Footer() {
           <div className="rounded-md bg-white p-3">
             <img src={logo} alt="Bud's Pest Control" className="h-14 w-auto" />
           </div>
-          <p className="text-sm text-primary-foreground/70">
-            Quality Service You Can Trust
-          </p>
+          <p className="text-sm text-primary-foreground/70">Quality Service You Can Trust</p>
         </div>
 
         <div className="flex items-center gap-4">
@@ -37,8 +35,8 @@ export function Footer() {
       </div>
       <div className="border-t border-primary-foreground/10">
         <p className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
-          © {new Date().getFullYear()} Bud's Pest Control. All rights reserved.
-          Cape Town, South Africa.
+          © {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South
+          Africa.
         </p>
       </div>
     </footer>

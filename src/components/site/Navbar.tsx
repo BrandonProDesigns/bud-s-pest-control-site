@@ -16,11 +16,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/90 backdrop-blur supports-[backdrop-filter]:bg-background/75">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <a href="#home" className="flex items-center gap-2">
-          <img
-            src={logo}
-            alt="Bud's Pest Control logo"
-            className="h-10 w-auto sm:h-12"
-          />
+          <img src={logo} alt="Bud's Pest Control logo" className="h-10 w-auto sm:h-12" />
           <span className="sr-only">Bud's Pest Control | BPC</span>
         </a>
 

@@ -26,14 +26,12 @@ export function SubscriptionPlan() {
             <Repeat className="h-3.5 w-3.5" /> Monthly Subscription
           </p>
           <h2 className="mt-4 font-heading text-4xl font-bold uppercase leading-tight sm:text-5xl lg:text-6xl">
-            Join Our Monthly Subscription —{" "}
-            <span className="text-accent">From R269/month</span>
+            Join Our Monthly Subscription — <span className="text-accent">From R269/month</span>
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-primary-foreground/80">
-            A single treatment won't eliminate a long-standing infestation. Our
-            monthly subscription sets up a debit of R269/month, giving you 6
-            professional services per year (every 2 months) to keep pests under
-            control for good.
+            A single treatment won't eliminate a long-standing infestation. Our monthly subscription
+            sets up a debit of R269/month, giving you 6 professional services per year (every 2
+            months) to keep pests under control for good.
           </p>
         </FadeIn>
 
@@ -64,13 +62,10 @@ export function SubscriptionPlan() {
                   <span className="font-heading text-6xl font-bold leading-none sm:text-7xl">
                     R269
                   </span>
-                  <span className="font-heading text-2xl font-bold uppercase">
-                    /month
-                  </span>
+                  <span className="font-heading text-2xl font-bold uppercase">/month</span>
                 </div>
                 <p className="mt-4 text-accent-foreground/90">
-                  6 services per year • Cape Town & surrounds • Cancel any time
-                  per Ts & Cs.
+                  6 services per year • Cape Town & surrounds • Cancel any time per Ts & Cs.
                 </p>
               </div>
               <div className="mt-8 flex flex-col gap-3">

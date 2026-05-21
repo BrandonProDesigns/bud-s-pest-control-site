@@ -5,6 +5,7 @@ A professional single-page marketing site for a Cape Town pest control company, 
 ## Design system
 
 Update `src/styles.css` tokens to brand colors (converted to oklch):
+
 - `--primary`: deep navy `#1a2e5a`
 - `--accent`: bold orange `#e87722`
 - `--background`: white, `--secondary`: light grey `#f5f5f5`
@@ -15,6 +16,7 @@ Update `src/styles.css` tokens to brand colors (converted to oklch):
 ## Routes & files
 
 Single landing page — keep everything on `/`:
+
 - `src/routes/index.tsx` — page composition + SEO `head()` (title, description, og tags)
 - `src/components/site/Navbar.tsx` — sticky nav, logo, links (Home/Services/Plans/Contact), orange "Call Now" button; mobile hamburger
 - `src/components/site/Hero.tsx` — navy bg with diagonal orange accent (CSS clip-path), headline, sub, two CTAs (tel: + wa.me link), technician silhouette graphic on right
