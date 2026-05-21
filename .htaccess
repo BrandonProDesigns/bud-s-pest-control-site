@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# If the request is for a physical file or directory, serve it
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Otherwise, pass everything to the Node.js app
+# (Hostinger's Node.js selector usually handles this if server.js is the entry point)
