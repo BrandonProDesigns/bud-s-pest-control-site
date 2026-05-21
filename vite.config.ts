@@ -14,6 +14,9 @@ export default defineConfig({
     plugins: [
       nitro({
         preset: "node-server",
+        output: {
+          dir: "dist",
+        },
       }),
     ],
   },

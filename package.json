@@ -7,7 +7,7 @@
     "dev": "vite dev",
     "build": "cross-env NITRO_PRESET=node-server vite build",
     "build:hostinger": "cross-env NITRO_PRESET=node-server vite build",
-    "start": "node .output/server/index.mjs",
+    "start": "node dist/server/index.mjs",
     "preview": "vite preview",
     "lint": "eslint .",
     "format": "prettier --write ."
