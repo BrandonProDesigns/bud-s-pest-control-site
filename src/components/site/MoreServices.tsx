@@ -1,6 +1,13 @@
 import { FadeIn } from "./FadeIn";
+import termiteImg from "@/assets/termite.png";
 
-const pests = [
+interface Pest {
+  name: string;
+  icon?: string;
+  image?: string;
+}
+
+const pests: Pest[] = [
   { name: "Ant", icon: "🐜" },
   { name: "Bedbug", icon: "🛏️" },
   { name: "Cockroach", icon: "🪳" },
@@ -11,6 +18,7 @@ const pests = [
   { name: "Millipede", icon: "🐛" },
   { name: "Rodent", icon: "🐀" },
   { name: "Spider", icon: "🕷️" },
+  { name: "Termite", image: termiteImg },
   { name: "Wasp", icon: "🐝" },
 ];
 
@@ -27,11 +35,17 @@ export function MoreServices() {
           </p>
         </FadeIn>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 lg:grid-cols-6">
+        <div className="mt-14 grid grid-cols-1 gap-4 max-w-md mx-auto">
           {pests.map((pest, i) => (
             <FadeIn key={pest.name} delay={i * 0.05}>
               <div className="group flex h-full cursor-default flex-col items-center justify-center rounded-lg border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:border-accent hover:bg-accent hover:text-accent-foreground hover:shadow-lg">
-                <div className="text-5xl transition-transform group-hover:scale-110">{pest.icon}</div>
+                <div className="flex h-20 items-center justify-center transition-transform group-hover:scale-110">
+                  {pest.image ? (
+                    <img src={pest.image} alt={pest.name} className="h-full w-auto object-contain" />
+                  ) : (
+                    <div className="text-5xl">{pest.icon}</div>
+                  )}
+                </div>
                 <h3 className="mt-4 font-heading text-lg font-bold uppercase tracking-wide text-primary group-hover:text-accent-foreground">
                   {pest.name}
                 </h3>
