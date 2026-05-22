@@ -1,4 +1,4 @@
-import { Facebook, Instagram } from "lucide-react";
+import { Facebook } from "lucide-react";
 import logo from "@/assets/logo.png";
 
 export function Footer() {
@@ -14,22 +14,13 @@ export function Footer() {
 
         <div className="flex items-center gap-4">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/1GwWTZa8ii/?mibextid=wwXIfr"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Facebook"
             className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-primary-foreground/20 transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
           >
             <Facebook className="h-5 w-5" />
-          </a>
-          <a
-            href="https://www.instagram.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram"
-            className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-primary-foreground/20 transition-colors hover:border-accent hover:bg-accent hover:text-accent-foreground"
-          >
-            <Instagram className="h-5 w-5" />
           </a>
         </div>
       </div>
