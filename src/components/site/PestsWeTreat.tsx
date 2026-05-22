@@ -2,14 +2,20 @@ import { Bug, Rat } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 
 const pests = [
-  { label: "Cockroaches", icon: "🪳" },
-  { label: "Fleas", icon: "🦟" },
-  { label: "Ticks", icon: "🕷️" },
   { label: "Ants", icon: "🐜" },
-  { label: "Rodents", icon: "🐀" },
-  { label: "Bird Lice", icon: "🪶" },
-  { label: "Termites", icon: "🐛" },
   { label: "Bed Bugs", icon: "🛏️" },
+  { label: "Bird Lice", icon: "🪶" },
+  { label: "Cockroaches", icon: "🪳" },
+  { label: "Crickets", icon: "🦗" },
+  { label: "Fish Moths", icon: "🪲" },
+  { label: "Fleas", icon: "🦟" },
+  { label: "Lice", icon: "🪲" },
+  { label: "Millipedes", icon: "🐛" },
+  { label: "Rodents", icon: "🐀" },
+  { label: "Spiders", icon: "🕷️" },
+  { label: "Termites", icon: "🪲" },
+  { label: "Ticks", icon: "🕷️" },
+  { label: "Wasps", icon: "🐝" },
 ];
 
 export function PestsWeTreat() {
@@ -26,7 +32,7 @@ export function PestsWeTreat() {
           </p>
         </FadeIn>
 
-        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
+        <div className="mt-14 grid grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-7">
           {pests.map((p, i) => (
             <FadeIn key={p.label} delay={i * 0.05}>
               <div className="group flex h-full cursor-default flex-col items-center justify-center rounded-lg border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:border-accent hover:bg-accent hover:text-accent-foreground hover:shadow-lg">
