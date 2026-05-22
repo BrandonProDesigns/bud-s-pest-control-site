@@ -7,7 +7,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
 const benefits = [
-  "No long-term contracts, cancel anytime.",
   "Regular bi-monthly professional treatments.",
   "Priority scheduling for all subscribers.",
   "Comprehensive protection against common pests.",
