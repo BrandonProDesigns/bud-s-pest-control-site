@@ -1,5 +1,9 @@
 import { Bug, Rat } from "lucide-react";
 import { FadeIn } from "./FadeIn";
+import bedBugImg from "@/assets/bed-bug.png";
+import fishMothImg from "@/assets/fish-moth.png";
+import fleaImg from "@/assets/flea.png";
+import louseImg from "@/assets/louse.png";
 
 interface Pest {
   label: string;
@@ -9,12 +13,12 @@ interface Pest {
 
 const pests: Pest[] = [
   { label: "Ants", icon: "🐜" },
-  { label: "Bed Bugs", icon: "🛏️" },
+  { label: "Bed Bugs", image: bedBugImg },
   { label: "Cockroaches", icon: "🪳" },
   { label: "Crickets", icon: "🦗" },
-  { label: "Fish Moths", icon: "🩶" },
-  { label: "Fleas", icon: "🦟" },
-  { label: "Lice", icon: "🪰" },
+  { label: "Fish Moths", image: fishMothImg },
+  { label: "Fleas", image: fleaImg },
+  { label: "Lice", image: louseImg },
   { label: "Millipedes", icon: "🐛" },
   { label: "Rodents", icon: "🐀" },
   { label: "Spiders", icon: "🕷️" },
