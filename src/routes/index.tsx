@@ -1,7 +1,6 @@
 import { Hero } from "@/components/site/Hero";
 import { WhyChooseUs } from "@/components/site/WhyChooseUs";
 import { PestsWeTreat } from "@/components/site/PestsWeTreat";
-import { MoreServices } from "@/components/site/MoreServices";
 import { SubscriptionPlan } from "@/components/site/SubscriptionPlan";
 import { SubscriptionEnquiry } from "@/components/site/SubscriptionEnquiry";
 import { Contact } from "@/components/site/Contact";
@@ -21,7 +20,6 @@ function Index() {
         <Hero />
         <WhyChooseUs />
         <PestsWeTreat />
-        <MoreServices />
         <SubscriptionPlan />
         <SubscriptionEnquiry />
         <Contact />

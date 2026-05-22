@@ -33,7 +33,7 @@ export function PestsWeTreat() {
           </p>
         </FadeIn>
 
-        <div className="mt-14 grid grid-cols-1 gap-4 max-w-md mx-auto">
+        <div className="mt-14 grid grid-cols-2 gap-4 md:grid-cols-4 mx-auto">
           {pests.map((p, i) => (
             <FadeIn key={p.label} delay={i * 0.05}>
               <div className="group flex h-full cursor-default flex-col items-center justify-center rounded-lg border border-border bg-card p-6 text-center shadow-sm transition-all hover:-translate-y-1 hover:border-accent hover:bg-accent hover:text-accent-foreground hover:shadow-lg">
