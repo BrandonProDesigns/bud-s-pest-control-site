@@ -55,6 +55,9 @@ export function SubscriptionPlan() {
           <FadeIn delay={0.1}>
             <div className="flex h-full flex-col justify-between rounded-lg bg-accent p-8 text-accent-foreground shadow-2xl">
               <div>
+                <div className="mb-4 inline-flex items-center rounded-full bg-primary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-primary">
+                  Available in Cape Town
+                </div>
                 <p className="font-heading text-sm font-bold uppercase tracking-widest">
                   Starting From
                 </p>
@@ -71,14 +74,14 @@ export function SubscriptionPlan() {
                 <div className="mt-6 flex flex-col gap-2">
                   <div className="flex items-center gap-2">
                     <MapPin className="h-4 w-4 text-[#ea580c]" />
-                    <span className="text-[11px] font-black uppercase tracking-tight text-primary">
-                      Currently available in Cape Town & surrounds only
+                    <span className="text-[11px] font-black uppercase tracking-normal text-primary">
+                      Cape Town Packages Only
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-slate-500" />
-                    <span className="text-[11px] font-black uppercase tracking-tight text-slate-600">
-                      Johannesburg — Coming Soon
+                    <span className="text-[11px] font-black uppercase tracking-normal text-slate-600">
+                      Johannesburg Packages Coming Soon
                     </span>
                   </div>
                 </div>

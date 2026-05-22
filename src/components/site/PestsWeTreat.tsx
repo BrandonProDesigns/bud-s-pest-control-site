@@ -4,6 +4,7 @@ import bedBugImg from "@/assets/bed-bug.png";
 import fishMothImg from "@/assets/fish-moth.png";
 import fleaImg from "@/assets/flea.png";
 import louseImg from "@/assets/louse.png";
+import termiteImg from "@/assets/termite.png";
 
 interface Pest {
   label: string;
@@ -22,6 +23,7 @@ const pests: Pest[] = [
   { label: "Millipedes", icon: "🐛" },
   { label: "Rodents", icon: "🐀" },
   { label: "Spiders", icon: "🕷️" },
+  { label: "Termites", image: termiteImg },
   { label: "Wasps", icon: "🐝" },
 ];
 
