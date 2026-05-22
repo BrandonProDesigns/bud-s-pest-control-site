@@ -35,9 +35,23 @@ export function Footer() {
       </div>
       <div className="border-t border-primary-foreground/10">
         <div className="mx-auto max-w-7xl px-4 py-5 text-center text-xs text-primary-foreground/60 sm:px-6 lg:px-8">
-          <p>© {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town, South Africa.</p>
-          <p className="mt-2">
-            Powered by <span className="font-semibold text-primary-foreground/80">Brandon Pro</span> • 0737742151
+          <p>
+            © {new Date().getFullYear()} Bud's Pest Control. All rights reserved. Cape Town &
+            Johannesburg, South Africa.
+          </p>
+          <div className="mt-4 flex flex-col items-center justify-center gap-4 md:flex-row md:gap-12">
+            <div>
+              <p className="font-bold uppercase tracking-wider text-accent">Cape Town Office</p>
+              <p className="mt-1">Cape Town, Western Cape</p>
+            </div>
+            <div>
+              <p className="font-bold uppercase tracking-wider text-accent">Johannesburg Office</p>
+              <p className="mt-1">Johannesburg, Gauteng</p>
+            </div>
+          </div>
+          <p className="mt-6">
+            Powered by <span className="font-semibold text-primary-foreground/80">Brandon Pro</span> •
+            0737742151
           </p>
         </div>
       </div>

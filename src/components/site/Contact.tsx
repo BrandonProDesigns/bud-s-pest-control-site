@@ -22,8 +22,8 @@ const cards = [
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "Cape Town, Western Cape, South Africa",
+    label: "Locations",
+    value: "Cape Town & Johannesburg",
     href: null,
   },
 ];

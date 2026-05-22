@@ -80,14 +80,14 @@ export function Hero() {
       <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-20 sm:px-6 md:grid-cols-2 md:py-28 lg:px-8">
         <div>
           <span className="inline-block rounded-full bg-accent/20 px-4 py-1 text-xs font-bold uppercase tracking-widest text-accent">
-            Cape Town • Always Open 24/7
+            Cape Town & Johannesburg • Always Open 24/7
           </span>
           <h1 className="mt-5 font-heading text-5xl font-bold uppercase leading-[1.05] sm:text-6xl lg:text-7xl">
             Protecting Your Home & Business From Pests
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/80 sm:text-xl">
-            Professional Pest Management Services in Cape Town. Reliable • Safe • Professional
-            Service.
+            Professional Pest Management Services in Cape Town and Johannesburg. Reliable • Safe •
+            Professional Service.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
