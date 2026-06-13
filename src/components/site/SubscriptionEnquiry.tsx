@@ -105,7 +105,7 @@ export function SubscriptionEnquiry() {
                     <Input
                       id="suburb"
                       name="suburb"
-                      placeholder="e.g. Sea Point"
+                      placeholder="e.g. Sandton or Sea Point"
                       required
                       value={formData.suburb}
                       onChange={handleChange}
