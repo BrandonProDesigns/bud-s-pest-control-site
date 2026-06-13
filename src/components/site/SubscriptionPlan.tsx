@@ -1,4 +1,4 @@
-import { CheckCircle2, Repeat, MapPin, Clock } from "lucide-react";
+import { CheckCircle2, Repeat } from "lucide-react";
 import { FadeIn } from "./FadeIn";
 
 const steps = [
@@ -35,7 +35,7 @@ export function SubscriptionPlan() {
           </p>
         </FadeIn>
 
-        <div className="mt-14 grid items-stretch gap-8 lg:grid-cols-2">
+        <div className="mt-14 grid items-stretch gap-8 lg:grid-cols-3">
           <FadeIn>
             <div className="h-full rounded-lg border border-accent/30 bg-background/5 p-8 backdrop-blur-sm">
               <h3 className="font-heading text-2xl font-bold uppercase text-accent">
@@ -59,47 +59,87 @@ export function SubscriptionPlan() {
                   Available in Cape Town
                 </div>
                 <p className="font-heading text-sm font-bold uppercase tracking-widest">
-                  Starting From
+                  Cape Town Plans
                 </p>
                 <div className="mt-3 flex items-baseline gap-2">
-                  <span className="font-heading text-6xl font-bold leading-none sm:text-7xl">
+                  <span className="font-heading text-6xl font-bold leading-none">
                     R269
                   </span>
                   <span className="font-heading text-2xl font-bold uppercase">/month</span>
                 </div>
                 <p className="mt-4 text-accent-foreground/90">
-                  6 services per year • Cape Town & surrounds • Cancel any time per Ts & Cs.
+                  6 services per year • Cape Town & surrounds
                 </p>
-
-                <div className="mt-6 flex flex-col gap-2">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-4 w-4 text-[#ea580c]" />
-                    <span className="text-[11px] font-black uppercase tracking-normal text-primary">
-                      Cape Town Packages Only
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-slate-500" />
-                    <span className="text-[11px] font-black uppercase tracking-normal text-slate-600">
-                      Johannesburg Packages Coming Soon
-                    </span>
-                  </div>
-                </div>
               </div>
               <div className="mt-8 flex flex-col gap-3">
                 <a
-                  href="https://wa.me/27824955147?text=Hi%20Bud%27s%20Pest%20Control%2C%20I%27d%20like%20to%20subscribe%20to%20the%20R269%2Fmonth%20plan."
+                  href="https://wa.me/27824955147?text=Hi%20Bud%27s%20Pest%20Control%2C%20I%27d%20like%20to%20subscribe%20to%20the%20R269%2Fmonth%20plan%20in%20Cape%20Town."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-4 font-bold uppercase tracking-wide text-primary-foreground transition-transform hover:scale-[1.02]"
                 >
-                  Subscribe Now — R269/month
+                  Subscribe Now — R269/pm
                 </a>
                 <a
                   href="tel:+27824955147"
                   className="inline-flex items-center justify-center rounded-md border-2 border-primary/30 bg-transparent px-6 py-3 font-bold uppercase tracking-wide text-primary transition-colors hover:bg-primary/10"
                 >
-                  Or Call 082 495 5147
+                  Call 082 495 5147
+                </a>
+              </div>
+            </div>
+          </FadeIn>
+
+          <FadeIn delay={0.2}>
+            <div className="relative flex h-full flex-col justify-between overflow-hidden rounded-lg bg-accent p-8 text-accent-foreground shadow-2xl">
+              <div className="absolute -right-12 top-6 rotate-45 bg-primary px-12 py-1 text-[10px] font-bold uppercase tracking-[0.2em] text-primary-foreground shadow-lg">
+                Now in JHB!
+              </div>
+              <div>
+                <div className="mb-4 inline-flex items-center rounded-full bg-primary/20 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-primary">
+                  Available in Johannesburg
+                </div>
+                <p className="font-heading text-sm font-bold uppercase tracking-widest">
+                  Johannesburg Plans
+                </p>
+                <div className="mt-6 space-y-4">
+                  <div className="flex flex-col gap-1 border-b border-primary/20 pb-3">
+                    <span className="text-[10px] font-bold uppercase text-primary/70">1–3 Bedroom Home</span>
+                    <div className="flex items-baseline gap-1">
+                      <span className="font-heading text-4xl font-bold">R450</span>
+                      <span className="text-xs font-bold uppercase">/month</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-1 border-b border-primary/20 pb-3">
+                    <span className="text-[10px] font-bold uppercase text-primary/70">3–4 Bedroom House</span>
+                    <div className="flex items-baseline gap-1">
+                      <span className="font-heading text-4xl font-bold">R500</span>
+                      <span className="text-xs font-bold uppercase">/month</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col gap-1">
+                    <span className="text-[10px] font-bold uppercase text-primary/70">Larger Properties</span>
+                    <span className="font-heading text-lg font-bold">Priced on Request</span>
+                  </div>
+                </div>
+                <p className="mt-6 text-sm text-accent-foreground/90">
+                  6 services per year • Within 50km of Johannesburg
+                </p>
+              </div>
+              <div className="mt-8 flex flex-col gap-3">
+                <a
+                  href="https://wa.me/27824955147?text=Hi%20Bud%27s%20Pest%20Control%2C%20I%27m%20interested%20in%20a%20Johannesburg%20subscription%20plan."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-4 font-bold uppercase tracking-wide text-primary-foreground transition-transform hover:scale-[1.02]"
+                >
+                  Subscribe Now
+                </a>
+                <a
+                  href="tel:+27824955147"
+                  className="inline-flex items-center justify-center rounded-md border-2 border-primary/30 bg-transparent px-6 py-3 font-bold uppercase tracking-wide text-primary transition-colors hover:bg-primary/10"
+                >
+                  Call 082 495 5147
                 </a>
               </div>
             </div>
